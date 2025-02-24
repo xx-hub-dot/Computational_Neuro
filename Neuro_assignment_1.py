@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[92]:
-
-
 import random
 
 def init_weights():
@@ -40,16 +37,4 @@ print(f"(h1): {out_h1}")
 print(f"(h2): {out_h2}")
 print(f"(o1): {out_o1}")
 print(f"(o2): {out_o2}")
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
 
