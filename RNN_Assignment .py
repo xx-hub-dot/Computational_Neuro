@@ -1,7 +1,7 @@
 import numpy as np
 import random
 
-vocab = ['i', 'like', 'deep', 'learning']
+vocab = ['I', 'am','in', 'Delta', 'UNI']
 vocab_size = len(vocab)
 
 word_to_index = {word: idx for idx, word in enumerate(vocab)}
@@ -17,7 +17,7 @@ Wx = np.random.uniform(-1, 1, (hidden_size, vocab_size))
 Wh = np.random.uniform(-1, 1, (hidden_size, hidden_size))
 Wy = np.random.uniform(-1, 1, (vocab_size, hidden_size))
 
-inputs = ['i', 'like', 'deep'] 
+inputs = ['I', 'am','in', 'Delta', 'UNI'] 
 
 h_prev = np.zeros((hidden_size, 1))
 
@@ -34,9 +34,3 @@ predicted_index = np.argmax(y_pred)
 predicted_word = index_to_word[predicted_index]
 
 print("Predicted next word:", predicted_word)
-
-
-
-
-
-
